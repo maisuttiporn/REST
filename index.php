@@ -6,6 +6,9 @@ if(!empty($_GET["name"])) {
     $name = $_GET["name"];
     $price = get_price($name);
     
+    
+    
+    
     if(empty($price)) {
         // book not found
         deliver_response(200,"book not found",NULL);
